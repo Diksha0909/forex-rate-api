@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: forex
+  threads:
+    virtual:
+      enabled: true
+logging:
+  level:
+    org.springframework.web: DEBUG
+    com.example.forex: DEBUG
