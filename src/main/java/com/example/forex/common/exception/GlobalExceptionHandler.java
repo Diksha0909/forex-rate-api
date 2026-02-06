@@ -1,7 +1,7 @@
 package com.example.forex.common.exception;
 
-import com.example.forex.exchange.exception.ExternalApiException;
-import com.example.forex.exchange.exception.InvalidPairException;
+import com.example.forex.common.exception.InvalidPairException;
+import com.example.forex.common.exception.InvalidPairException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

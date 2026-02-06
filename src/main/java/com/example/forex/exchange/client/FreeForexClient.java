@@ -1,7 +1,7 @@
 package com.example.forex.exchange.client;
 //import com.fasterxml.jackson.databind.ObjectMapper;
 
-import com.example.forex.exchange.exception.ExternalApiException;
+import com.example.forex.common.exception.ExternalApiException;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;

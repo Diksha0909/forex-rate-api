@@ -7,7 +7,6 @@ This project was built as part of a hiring assessment to demonstrate backend dev
 - Validation & error handling
 - External API integration
 - Clean architecture and modular code structure
-- Production-style logging and exception responses
 
 ---
 
@@ -191,17 +190,6 @@ This improves scalability when the application makes blocking external HTTP call
 - Source and destination are expected to be valid 3-letter ISO currency codes (USD, EUR, GBP, etc.)
 - External API is called directly with the requested pair (ex: USDEUR)
 - If external API returns an unsupported pair or invalid response, the service returns an error response
-
----
-
-## Improvements (Future Scope)
-
-- Add validation by fetching supportedPairs from `/api/live`
-- Add caching for supportedPairs
-- Add unit tests + integration tests
-- Add Swagger/OpenAPI documentation
-- Add Dockerfile for container deployment
-- Add retry mechanism for external API failures
 
 ---
 

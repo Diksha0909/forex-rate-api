@@ -7,6 +7,8 @@ import jakarta.validation.Valid;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+ // REST Controller responsible for handling Exchange Rate API requests.
+
 @RestController
 @RequestMapping("/api/exchange-rate")
 public class ExchangeController {

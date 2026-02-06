@@ -2,12 +2,13 @@ package com.example.forex.exchange.service;
 
 import com.example.forex.exchange.client.FreeForexClient;
 import com.example.forex.exchange.client.FreeForexResponse;
-import com.example.forex.exchange.exception.InvalidPairException;
+import com.example.forex.common.exception.InvalidPairException;
 import com.example.forex.exchange.model.ExchangeRateResponse;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+//  Service class responsible for handling exchange rate business logic.
 
 @Service
 public class ExchangeRateService {
@@ -18,6 +19,12 @@ public class ExchangeRateService {
         this.freeForexClient = freeForexClient;
     }
 
+    /**
+     * Fetches the latest exchange rate for the given source and destination currencies.
+     * @param source      source currency code (example: USD)
+     * @param destination destination currency code (example: EUR)
+     * @return exchange rate response containing rate and updated timestamp
+     */
     public ExchangeRateResponse getExchangeRate(String source, String destination) {
 
         source = source.toUpperCase();

@@ -1,4 +1,4 @@
-package com.example.forex.exchange.exception;
+package com.example.forex.common.exception;
 
 public class ExternalApiException extends RuntimeException {
     public ExternalApiException(String message) {
